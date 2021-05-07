@@ -27,3 +27,8 @@ Reset [Only Broadcaster]:
 ```bash
   !reset
 ```
+
+## Roadmap
+
+- Improve UI.
+- More options (option to only allow subscribers/VIP's can join the raffle/giveaway)
