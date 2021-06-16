@@ -1,95 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitch Giveaway Bot</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-gray-200">
-    <div class="flex items-center justify-center h-screen">
-      <div class="my-8">
-        <h1 class="py-3 text-xl text-center">Twitch Giveaway Bot</h1>
-        <div class="pb-6 md:pb-0 flex flex-col">
-          <div>
-            <label
-              class="
-                input-field
-                inline-flex
-                items-baseline
-                border-none
-                shadow-md
-                bg-white
-                p-5
-                rounded-t
-              "
-              ><span
-                class="
-                  flex-none
-                  text-dusty-blue-darker
-                  select-none
-                  leading-none
-                "
-                >twitch.tv/</span
-              >
-              <div class="flex-1 leading-none">
-                <input
-                  id="channel"
-                  type="text"
-                  class="
-                    placeholder-blue
-                    w-full
-                    p-0
-                    no-outline
-                    text-dusty-blue-darker
-                    focus:outline-none
-                  "
-                  placeholder="xqcow"
-                /></div
-            ></label>
-          </div>
-          <button
-            class="
-              bg-white
-              hover:bg-gray-100
-              text-gray-800
-              font-semibold
-              py-2
-              px-4
-              shadow
-              rounded-b
-              focus:outline-none
-            "
-            onclick="Start();"
-          >
-            Connect
-          </button>
-          <div>
-            <span class="text-sm text-center text-gray-800">Status:</span>
-            <span id="status" class="text-sm text-center font-medium"
-              >Not connected</span
-            >
-          </div>
-          <div>
-            <span class="text-sm text-center text-gray-800">Users:</span>
-            <span id="count" class="text-sm text-center font-medium">0</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitch Giveaway Bot</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-200">
+  <div class="flex items-center justify-center h-screen">
+    <div class="my-8">
+      <h1 class="py-3 text-xl text-center">Twitch Giveaway Bot</h1>
+      <div class="pb-6 md:pb-0 flex flex-col">
+        <div>
+          <label class="input-field inline-flex items-baseline border-none shadow-md bg-white p-5 rounded-t">
+            <span class="flex-none text-dusty-blue-darker select-none leading-none">twitch.tv/</span>
+            <div class="flex-1 leading-none">
+              <input id="channel" type="text"
+                class=" placeholder-blue w-full p-0 no-outline text-dusty-blue-darker focus:outline-none"
+                placeholder="xqcow" />
+            </div>
+          </label>
+        </div>
+        <button
+          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 shadow rounded-b focus:outline-none"
+          onclick="Start();">
+          Connect
+        </button>
+        <div>
+          <span class="text-sm text-center text-gray-800">Status:</span>
+          <span id="status" class="text-sm text-center font-medium">Not connected</span>
+        </div>
+        <div>
+          <span class="text-sm text-center text-gray-800">Users:</span>
+          <span id="count" class="text-sm text-center font-medium">0</span>
         </div>
       </div>
     </div>
-    <script src="lib/tmi.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
-    />
-  </body>
+  </div>
+  <script src="lib/tmi.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" />
+</body>
+
 </html>
