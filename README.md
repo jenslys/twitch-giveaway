@@ -28,7 +28,3 @@ Reset [Only Broadcaster]:
   !reset
 ```
 
-## Roadmap
-
-- Improve UI.
-- More options (option to only allow subscribers/VIP's to join the raffle/giveaway)
